@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_horizontal"
+    android:layout_marginStart="@dimen/margin_vertical"
+    android:layout_marginEnd="@dimen/margin_vertical"
+    android:layout_marginBottom="@dimen/margin_horizontal"
+    tools:context=".ConfimarDatos">
+
+    <TextView
+        android:id="@+id/tv_confirma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="16dp"
+        android:text="@string/confirmar_datos"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_below="@id/tv_confirma"
+        android:text="@string/tv_nombre"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_confirma"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/tvName"
+        android:paddingTop="16dp"
+        android:text="nombre" />
+
+    <TextView
+        android:id="@+id/tv_fech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_below="@id/tvName"
+        android:text="@string/tv_fecha"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/tv_fech"
+        android:paddingTop="16dp"
+        android:text="fecha" />
+
+    <TextView
+        android:id="@+id/tvTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_below="@id/tv_fech"
+        android:text="@string/tv_telefono"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/tv_fech"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/tvTel"
+        android:text="telefono" />
+
+    <TextView
+        android:id="@+id/tvEma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTel"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/tv_email"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTel"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/tvEma"
+        android:paddingTop="16dp"
+        android:text="email" />
+
+    <TextView
+        android:id="@+id/tvDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEma"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/tv_descripcion"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEma"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/tvDes"
+        android:paddingTop="16dp"
+        android:text="descripción" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_confirma"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/editar_datos"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:theme="@style/MyButton"/>
+
+</RelativeLayout>

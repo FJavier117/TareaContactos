@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="margin_vertical">16dp</dimen>
+    <dimen name="size_piker_ancho">240dp</dimen>
+    <dimen name="size_piker_alto">280dp</dimen>
+    <dimen name="padding_edt">16dp</dimen>
+    <dimen name="margin_btn_top">60dp</dimen>
+</resources>

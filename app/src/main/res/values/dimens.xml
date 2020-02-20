@@ -5,5 +5,5 @@
     <dimen name="size_piker_ancho">240dp</dimen>
     <dimen name="size_piker_alto">280dp</dimen>
     <dimen name="padding_edt">16dp</dimen>
-    <dimen name="margin_btn_top">60dp</dimen>
+    <dimen name="margin_btn_top">45dp</dimen>
 </resources>

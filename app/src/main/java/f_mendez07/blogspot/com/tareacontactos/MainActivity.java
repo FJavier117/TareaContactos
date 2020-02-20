@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         int day;
 
         year = dtpFecha.getYear();
-        month = dtpFecha.getMonth();
+        month = dtpFecha.getMonth()+1;
         day = dtpFecha.getDayOfMonth();
         return day +"/"+ month+"/"+ year;
     }

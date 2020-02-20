@@ -10,14 +10,21 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edtNombre"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/nombre"
-        android:maxLines="1"
-        android:inputType="text"
-        android:theme="@style/EditText"/>
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"
+            android:maxLines="1"
+            android:inputType="text"
+            android:theme="@style/EditText"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <DatePicker
         android:id="@+id/dtpFecha"
@@ -40,38 +47,55 @@
             android:orientation="vertical"
             android:fitsSystemWindows="true">
 
-
-            <EditText
-                android:id="@+id/edtTelefono"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/padding_edt"
-                android:hint="@string/telefono"
-                android:inputType="phone"
-                android:maxLines="1"
-                android:theme="@style/EditText"/>
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/edtEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/padding_edt"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:theme="@style/EditText"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_edt"
+                    android:hint="@string/telefono"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:theme="@style/EditText" />
 
-            <EditText
-                android:id="@+id/edtDescripcion"
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="top|start"
-                android:lines="4"
-                android:scrollbars="vertical"
-                android:paddingTop="@dimen/padding_edt"
-                android:inputType="textMultiLine|textAutoComplete"
-                android:hint="@string/descripcion"
-                android:theme="@style/EditText"/>
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_edt"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:theme="@style/EditText"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:paddingTop="@dimen/padding_edt"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/descripcion"
+                    android:theme="@style/EditText"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btnSiguiente"
@@ -81,8 +105,6 @@
                 android:text="@string/siguiente"
                 android:textAllCaps="false"
                 android:theme="@style/MyButton"/>
-
-
 
         </LinearLayout>
     </ScrollView>

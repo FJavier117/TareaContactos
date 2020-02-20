@@ -28,66 +28,94 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/edtNombre"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNom"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="16dp"
-                android:hint="@string/nombre"
-                android:inputType="text"
-                android:maxLines="1"
-                android:theme="@style/EditText"/>
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/edtTelefono"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/edtNombre"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:hint="@string/telefono"
-                android:inputType="phone"
-                android:maxLines="1"
-                android:paddingTop="@dimen/padding_edt"
-                android:theme="@style/EditText"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:hint="@string/nombre"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:theme="@style/EditText"/>
 
-            <EditText
-                android:id="@+id/edtEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/edtTelefono"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:paddingTop="@dimen/padding_edt"
-                android:theme="@style/EditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
-                android:id="@+id/edtDescripcion"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/edtEmail"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:gravity="top|start"
-                android:hint="@string/descripcion"
-                android:inputType="textMultiLine|textAutoComplete"
-                android:lines="3"
-                android:paddingTop="@dimen/padding_edt"
-                android:theme="@style/EditText"/>
+                android:layout_below="@id/tilNom">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/telefono"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/padding_edt"
+                    android:theme="@style/EditText"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tilTel">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/padding_edt"
+                    android:theme="@style/EditText"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tilEma">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="top|start"
+                    android:hint="@string/descripcion"
+                    android:inputType="textMultiLine|textAutoComplete"
+                    android:lines="3"
+                    android:paddingTop="@dimen/padding_edt"
+                    android:theme="@style/EditText"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btnSiguiente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/edtDescripcion"
+                android:layout_below="@id/tilDes"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
